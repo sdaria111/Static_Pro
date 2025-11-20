@@ -1,0 +1,86 @@
+body {
+  font-family: Courier, monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Заголовок — по центру */
+header h1 {
+  text-align: center;
+  margin: 16px 0; /* отступ сверху и снизу 16px, слева и справа = 0 */
+  font-size: 80px; /* крупный шрифт */
+  font-weight: 500; /* ширина текста */
+  color: rgb(6, 63, 18);
+}
+
+/* Контейнер для "Обо мне" и фото */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  gap: 32px; /* расстояние между элементами */
+}
+
+.photo img {
+  width: 250px; /* ширина изображения*/
+  height: auto; /* сохраняет пропорции */
+  border-radius: 8px;
+  object-fit: cover; /* Обрезает изображение, чтобы оно **заполнило** заданные размеры */
+}
+
+.about {
+  flex: 1;
+  color: black;
+  font-size: 17.6px; /* размер шрифта */
+  text-align: left;
+}
+
+/* Основной текст */
+main {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* Блок навыков — единый фон */
+.skills-section {
+  background-color: #ecf0f1;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: black;
+}
+
+/* Список навыков — без разделения на квадраты */
+.skills-list {
+  list-style-type: none; /* Убирает маркеры у списка */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  padding: 9.6px 0;
+  font-size: 17.6px;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Линия-разделитель снизу */
+}
+
+/* Убираем последнюю линию */
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+/* Убираем hover-эффект (т.к. это теперь таблица) */
+.skills-list li:hover {
+  background-color: transparent;
+}
